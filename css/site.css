@@ -1,0 +1,15 @@
+.container {
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item {
+    width: 48%;
+}
+
+.item.first,
+.item.last {
+    width: 100%;
+}
