@@ -12,6 +12,15 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 2em 0;
+}
+
+.container.social {
+    justify-content: center;
+}
+
+.container.social a {
+    width: 40px;
 }
 
 .item {
@@ -36,7 +45,6 @@ img {
 .hero {
     background-color: rgba(255, 255, 255, 0.9);
     width: 48%;
-    height: 250px;
     padding: 40px 0;
     align-self: center;
     display: flex;
