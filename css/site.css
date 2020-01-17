@@ -6,6 +6,7 @@ img {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 2em;
+    overflow: hidden;
 }
 
 .container {
@@ -73,4 +74,38 @@ img {
     .item.last {
         order: 0;
     }
+}
+
+.section-header {
+    overflow: hidden;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+.section-header span {
+    position: relative;
+    max-width: 80%;
+    display: inline-block;
+}
+
+.section-header span::before,
+.section-header span::after {
+    display: block;
+    width: 100vw;
+    top: .75em;
+    position: absolute;
+    background: currentColor;
+    margin-top: -1px;
+    height: 1px;
+    content: "";
+}
+
+.section-header span::before {
+    margin-right: 24px;
+    right: 100%;
+}
+
+.section-header span::after {
+    margin-left: 24px;
+    left: 100%;
 }
