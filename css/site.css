@@ -1,3 +1,33 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #202121;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Dancing Script', cursive;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1.6em;
+}
+
 img {
     width: 100%;
 }
@@ -32,8 +62,29 @@ img {
     order: 10;
 }
 
+@media only screen and (min-width: 800px) {
+    .item {
+        width: 48%;
+    }
+
+    .item.last {
+        order: 0;
+    }
+}
+
 .center-text {
     text-align: center;
+}
+
+.main-header {
+    font-size: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1;
+    padding: .2em;
+    margin: 0;
 }
 
 .container-hero {
@@ -66,16 +117,6 @@ img {
     background-color: #569fdb;
 }
 
-@media only screen and (min-width: 800px) {
-    .item {
-        width: 48%;
-    }
-
-    .item.last {
-        order: 0;
-    }
-}
-
 .section-header {
     overflow: hidden;
     overflow-wrap: break-word;
@@ -86,6 +127,16 @@ img {
     position: relative;
     max-width: 80%;
     display: inline-block;
+}
+
+.section-header span::before {
+    margin-right: 24px;
+    right: 100%;
+}
+
+.section-header span::after {
+    margin-left: 24px;
+    left: 100%;
 }
 
 .section-header span::before,
@@ -100,12 +151,13 @@ img {
     content: "";
 }
 
-.section-header span::before {
-    margin-right: 24px;
-    right: 100%;
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.section-header span::after {
-    margin-left: 24px;
-    left: 100%;
+.social img {
+    width: 48px;
 }
