@@ -29,7 +29,9 @@ h4 {
 }
 
 img {
-    width: 100%;
+    display: block;
+    width: auto;
+    height: auto;
 }
 
 .main {
@@ -88,25 +90,38 @@ img {
 }
 
 .container-hero {
-    background-color: rgba(25, 25, 25, 0.9);
+    background-color: #1f2325;
     height: 600px;
     display: flex;
     justify-content: center;
 }
 
 .hero {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.8);
     width: 48%;
     padding: 40px 0;
     align-self: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-width: 400px;
+    text-align: center;
 }
 
-.hero.button {
+.hero .phone {
+    font-size: 1.5em;
+}
+
+.hero .description {
+    font-size: 1.5em;
+    padding: 0 1em;
+}
+
+.hero .button {
     height: 20px;
+    min-width: 150px;
     text-decoration: none;
+    font-weight: bold;
     padding: 1em;
     background-color: #4682b4;
     border-radius: 1000px;
@@ -151,6 +166,12 @@ img {
     content: "";
 }
 
+.container-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .social {
     display: flex;
     align-items: center;
@@ -160,4 +181,9 @@ img {
 
 .social img {
     width: 48px;
+}
+
+footer {
+    height: 50px;
+    background-color: #1f2325;
 }
