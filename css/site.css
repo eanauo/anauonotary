@@ -118,6 +118,15 @@ img {
     font-size: 1.5em;
 }
 
+.hero .phone a{
+    color: #202121;
+    text-decoration: none;
+}
+
+.hero .phone a:hover{
+    color: #4682b4;
+}
+
 .hero .description {
     font-size: 1.5em;
     padding: 0 1em;
@@ -134,7 +143,7 @@ img {
     color: white;
 }
 
-.hero.button:hover {
+.hero .button:hover {
     background-color: #569fdb;
 }
 
@@ -179,8 +188,15 @@ img {
 }
 
 .about-img {
-    float: left;
-    margin: 0 1em;
+    display: block;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 500px) {
+    .about-img {
+        float: left;
+        margin: 1em;
+    }
 }
 
 .social {
