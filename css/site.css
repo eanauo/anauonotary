@@ -172,6 +172,11 @@ img {
     justify-content: center;
 }
 
+.about-img {
+    float: left;
+    margin: 0 1em;
+}
+
 .social {
     display: flex;
     align-items: center;
