@@ -90,6 +90,11 @@ img {
 }
 
 .container-hero {
+    background-image: url("../img/notary.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
     background-color: #1f2325;
     height: 600px;
     display: flex;
